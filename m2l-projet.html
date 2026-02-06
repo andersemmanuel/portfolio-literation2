@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projet M2L - Portfolio</title>
+  <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <div class="logo-mark">P</div>
+          <span>PORTFOLIO</span>
+        </a>
+        <nav>
+          <a href="index.html" class="nav-link">ACCUEIL</a>
+          <a href="parcours.html" class="nav-link">PARCOURS</a>
+          <a href="projets.html" class="nav-link active">PROJETS</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="container" id="presentation">
+        <h2>Présentation du projet</h2>
+        <div class="intro">
+          <div class="intro-text">
+            <p>
+              L’application <strong>Java M2L – Gestion des employés des ligues</strong> a d’abord été conçue
+              comme un outil mono-utilisateur permettant de gérer les informations des salariés de la Maison
+              des Ligues (coordonnées, ligue d’appartenance, statut, etc.).
+            </p>
+            <p class="muted">
+              Le projet a ensuite fait l’objet d’une évolution majeure : passage à une application
+              <strong>multi-utilisateurs</strong> connectée à une base de données, avec gestion des droits
+              d’accès et séparation claire entre les rôles.
+            </p>
+          </div>
+          <div class="intro-meta">
+            <div class="pill">
+              <span class="pill-label">Contexte</span>
+              <span class="pill-value">Projet BTS SIO / M2L</span>
+            </div>
+            <div class="pill">
+              <span class="pill-label">Rôle</span>
+              <span class="pill-value">Conception & développement</span>
+            </div>
+            <div class="pill">
+              <span class="pill-label">Technos</span>
+              <span class="pill-value">Java, SQL, Architecture 3-tiers</span>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="container" id="objectifs">
+        <h2>Objectifs du projet</h2>
+        <div class="grid-2">
+          <div class="text-block">
+            <p>
+              L’objectif principal était de faire évoluer une application Java existante, initialement
+              mono-poste, vers une solution <strong>multi-utilisateurs</strong> s’appuyant sur une base de
+              données centralisée et une architecture 3-tiers.
+            </p>
+            <ul class="list">
+              <li>Assurer la persistance des données des employés dans une base relationnelle.</li>
+              <li>Mettre en place une <strong>gestion des rôles</strong> avec droits différenciés.</li>
+              <li>Séparer clairement la couche interface, la logique métier et l’accès aux données.</li>
+              <li>Garantir une évolution progressive sans casser l’existant.</li>
+            </ul>
+          </div>
+          <div class="text-block">
+            <p class="muted">
+              Le projet s’est déroulé dans un contexte proche d’un environnement professionnel&nbsp;:
+              travail sur une base de code existante, respect de contraintes métier, et prise en compte des
+              besoins des différents profils d’utilisateurs (employés, administrateurs de ligue,
+              super-administrateur).
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container" id="ressources">
+        <h2>Ressources fournies</h2>
+        <div class="grid-2">
+          <div class="text-block">
+            <p>Plusieurs éléments ont été mis à disposition pour démarrer le projet :</p>
+            <ul class="list">
+              <li>Dossier de présentation de la Maison des Ligues.</li>
+              <li>Exemples de fiches de réservation et de gestion des ligues.</li>
+              <li>Contraintes fonctionnelles et règles de gestion détaillées.</li>
+              <li>Exemples de schémas de données existants (si fournis).</li>
+            </ul>
+          </div>
+          <div class="text-block">
+            <p class="muted">
+              Ces ressources servent de base à l’analyse et permettent de justifier chaque choix de
+              modélisation. Elles sont également utiles pour valider le MCD à l’aide de scénarios concrets.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container" id="travail">
+        <h2>Travail réalisé</h2>
+        <p class="muted">
+          Le projet a été découpé en plusieurs étapes, de l’analyse de l’existant mono-utilisateur à la mise
+          en place de l’architecture 3-tiers et de la gestion fine des rôles.
+        </p>
+        <div class="work-steps">
+          <div class="step-card">
+            <span class="step-label">Étape 1</span>
+            <span class="step-title">Analyse de l’application existante</span>
+            <p class="muted">
+              Étude de l’ancienne application Java mono-utilisateur&nbsp;: fonctionnalités, limites,
+              mode de stockage local et attentes de la M2L en termes de partage des données.
+            </p>
+          </div>
+          <div class="step-card">
+            <span class="step-label">Étape 2</span>
+            <span class="step-title">Conception du modèle de données</span>
+            <p class="muted">
+              Conception du MCD et du schéma relationnel pour gérer les employés, les ligues et les rôles
+              (employé, administrateur de ligue, super-administrateur), puis validation avec des scénarios
+              concrets.
+            </p>
+          </div>
+          <div class="step-card">
+            <span class="step-label">Étape 3</span>
+            <span class="step-title">Mise en place de l’architecture 3-tiers</span>
+            <p class="muted">
+              Structuration de l’application en trois couches&nbsp;: interface Java (présentation), services
+              métier (règles de gestion, contrôles) et couche d’accès aux données (DAO, requêtes SQL).
+            </p>
+          </div>
+          <div class="step-card">
+            <span class="step-label">Étape 4</span>
+            <span class="step-title">Gestion des rôles et sécurisation</span>
+            <p class="muted">
+              Implémentation des profils <strong>Employé</strong> (lecture seule), <strong>Administrateur de
+              ligue</strong> (gestion des employés de sa ligue) et <strong>Super-administrateur</strong>
+              (paramétrage global), avec contrôles systématiques côté métier et côté base.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container" id="competences">
+        <h2>Compétences développées</h2>
+        <p class="muted">
+          Ce projet m’a permis de consolider plusieurs compétences clés du BTS SIO, autant sur le plan
+          technique que sur la structuration d’une application professionnelle.
+        </p>
+        <div class="skills-badges">
+          <span class="skill-badge">Java</span>
+          <span class="skill-badge">POO</span>
+          <span class="skill-badge">Architecture 3-tiers</span>
+          <span class="skill-badge">Base de données</span>
+          <span class="skill-badge">Gestion utilisateurs</span>
+        </div>
+      </section>
+
+      <section class="container" id="mcd">
+        <h2>MCD</h2>
+        <div class="mcd-wrapper">
+          <div class="text-block">
+            <p>
+              Le Modèle Conceptuel de Données structure les informations de la M2L autour des ligues, des
+              salles, des réservations et des utilisateurs. Il sert de référence pour toutes les évolutions
+              futures de la base.
+            </p>
+            <p class="muted">
+              Ci-contre, l’image du MCD permet de visualiser rapidement les entités principales, leurs
+              attributs et les relations entre elles.
+            </p>
+          </div>
+          <div class="mcd-placeholder">
+            <img src="Asset/images/mcd44.png" alt="Modèle conceptuel de données de l'application Java M2L" />
+          </div>
+        </div>
+      </section>
+
+      <section class="container" id="captures">
+        <h2>Captures écran</h2>
+        <p class="muted">
+          Quelques vues clés liées au projet (interface de gestion, base de données, outils utilisés, etc.).
+          La grille est responsive pour s’adapter au mobile et au desktop.
+        </p>
+        <div class="captures-grid">
+          <div class="card capture-card">
+            <img src="Asset/images/interface.png" alt="Interface principale application M2L" />
+          </div>
+          <div class="card capture-card">
+            <img src="Asset/images/console.png" alt="Gestion des employés et des ligues dans l'application M2L" />
+          </div>
+          <div class="card capture-card">
+            <img src="Asset/images/BDD.png" alt="Écran d'administration et gestion des utilisateurs M2L" />
+          </div>
+        </div>
+      </section>
+
+      <section class="container" id="liens">
+        <h2>Liens utiles</h2>
+        <p class="muted">
+          Quelques ressources associées au projet M2L. Remplace les liens d’exemple par tes propres URLs
+          (dépôt Git, documentation, livrables, etc.).
+        </p>
+        <div class="links-list">
+          <div class="link-item">
+            <div class="link-title">Dépôt Github du projet</div>
+            <small>Code source, scripts SQL et documentation technique.</small>
+            <a href="https://github.com/diarah-zr/atelier-pro-e" target="_blank" rel="noopener noreferrer" class="btn-link">Voir le projet</a>
+          </div>
+          <div class="link-item">
+            <div class="link-title">Documentation du projet</div>
+            <small>Dossier de présentation et règles de gestion détaillées.</small>
+            <a href="https://moodle.alexandre-mesle.com/mod/page/view.php?id=1007" target="_blank" rel="noopener noreferrer" class="btn-link">Voir la documentation</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <span>© <span id="year"></span> Portfolio - Projet M2L</span>
+        <span>Page projet orientée conception de base de données.</span>
+      </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <div class="lightbox-inner">
+        <button class="lightbox-close" type="button" aria-label="Fermer l’aperçu de l’image">&times;</button>
+        <img src="" alt="" class="lightbox-image" />
+      </div>
+    </div>
+  </div>
+
+  <script src="Script.js"></script>
+</body>
+</html>
+
