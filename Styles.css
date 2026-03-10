@@ -549,6 +549,44 @@
     background: radial-gradient(circle at top left, rgba(196, 181, 253, 0.28), rgba(15, 23, 42, 0.98));
   }
 
+  /* Tableau de synthèse */
+  .synthese-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+  }
+
+  .synthese-viewer {
+    border-radius: var(--radius-md);
+    border: 1px dashed rgba(75, 85, 99, 0.9);
+    background: radial-gradient(circle at top left, rgba(31, 41, 55, 0.75), rgba(3, 7, 18, 0.95));
+    padding: 1.4rem 1.2rem;
+    min-height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .synthese-viewer img,
+  .synthese-viewer iframe {
+    max-width: 100%;
+    max-height: 70vh;
+    border-radius: calc(var(--radius-md) - 2px);
+    border: 1px solid rgba(55, 65, 81, 0.9);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.8);
+    background: #000;
+  }
+
+  .synthese-placeholder-text {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+  }
+
+  .synthese-actions {
+    margin-top: 0.3rem;
+  }
+
   .link-item small {
     font-size: 0.8rem;
     color: var(--text-muted);
