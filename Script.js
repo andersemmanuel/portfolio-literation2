@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 200);
   };
 
-  const captureImages = document.querySelectorAll(".captures-grid img");
+  const captureImages = document.querySelectorAll(".lightbox-trigger");
   captureImages.forEach((img) => {
     img.style.cursor = "zoom-in";
     img.addEventListener("click", () => {
