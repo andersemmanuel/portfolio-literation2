@@ -496,6 +496,31 @@
     transform: scale(1.03);
   }
 
+  /* Grille de cards génériques (galeries, projets, etc.) */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 0.4rem;
+  }
+
+  .cards-grid .card {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  .cards-grid .card img {
+    height: auto;
+  }
+
+  .cards-grid .card h4 {
+    margin: 0.6rem 0.8rem 0.9rem;
+    font-size: 0.9rem;
+    color: var(--text-main);
+  }
+
   .links-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
