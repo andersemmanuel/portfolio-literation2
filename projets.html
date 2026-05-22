@@ -25,6 +25,14 @@
     </header>
 
     <main>
+      <section class="container" id="projets-professionnels-intro">
+        <h2>Projets professionnels</h2>
+        <p class="muted">
+          Projets réalisés dans le cadre du BTS SIO (SLAM), en lien avec les cours, les TP et les contextes
+          pédagogiques.
+        </p>
+      </section>
+
       <section class="container" id="presentation">
         <h2>Présentation du projet Java</h2>
         <div class="intro">
@@ -208,6 +216,58 @@
         </div>
       </section>
 
+      <section class="container projet-card" id="projet-skystorm">
+        <div class="projet-card-header">
+          <img
+            src="https://raw.githubusercontent.com/Max13/SkyStorm/master/resources/img/logo.png"
+            alt="Logo SkyStorm"
+            class="projet-logo"
+          />
+          <h2>SkyStorm</h2>
+        </div>
+
+        <div class="text-block">
+          <p>
+            Réplique allégée de Twitter/X développée en <strong>Laravel 12</strong>. Fonctionnalités&nbsp;:
+            inscription/connexion, création/modification/suppression de posts, système de suivi entre
+            utilisateurs, likes, fil d'actualité. Projet réalisé en contexte pédagogique BTS SIO SLAM.
+          </p>
+          <p class="muted" style="margin-top: 0.5rem;">Technologies utilisées</p>
+          <div class="skills-badges">
+            <span class="skill-badge">PHP 8.x</span>
+            <span class="skill-badge">Laravel 12</span>
+            <span class="skill-badge">MySQL</span>
+            <span class="skill-badge">Eloquent ORM</span>
+            <span class="skill-badge">Blade</span>
+            <span class="skill-badge">Bootstrap</span>
+          </div>
+        </div>
+
+        <h3>Captures d'écran</h3>
+        <div class="cards-grid">
+          <div class="card">
+            <img src="Asset/images/skystorm-mcd.png" class="lightbox-trigger" alt="MCD du projet SkyStorm" />
+            <h4>MCD du projet</h4>
+          </div>
+          <div class="card">
+            <img src="Asset/images/skystorm-code-1.png" class="lightbox-trigger" alt="Capture du code SkyStorm 1" />
+            <h4>Code du projet (1)</h4>
+          </div>
+          <div class="card">
+            <img src="Asset/images/skystorm-code-2.png" class="lightbox-trigger" alt="Capture du code SkyStorm 2" />
+            <h4>Code du projet (2)</h4>
+          </div>
+        </div>
+      </section>
+
+      <section class="container" id="projets-personnels-intro">
+        <h2>Projets personnels</h2>
+        <p class="muted">
+          Projets développés en autonomie pour approfondir la programmation orientée objet et la conception
+          d'applications.
+        </p>
+      </section>
+
       <section class="container" id="projet-temple-epreuves">
         <h2>Projet personnel : Le Temple des Épreuves</h2>
 
@@ -266,6 +326,64 @@
         <a href="Asset/Documentation/sujet histoire narrative.pdf" target="_blank" class="btn-link">
           Voir la documentation du projet
         </a>
+      </section>
+
+      <section class="container projet-card" id="projet-pokemon-combat">
+        <h2>Jeu de combat Pokémon</h2>
+
+        <div class="projet-combat-visual">
+          <div class="combat-pokemon combat-pokemon--left">
+            <img src="Asset/images/pokemon.png" alt="Pokémon de type Feu en position de combat" />
+          </div>
+          <span class="combat-vs" aria-hidden="true">VS</span>
+          <div class="combat-pokemon combat-pokemon--right">
+            <img src="Asset/images/pokemon 2.png" alt="Pokémon de type Eau en position de combat" />
+          </div>
+        </div>
+
+        <div class="text-block">
+          <p>
+            Jeu de combat en Java avec héritage et polymorphisme. Classe <strong>Pokemon</strong> avec
+            attributs (nom, type, vie, puissance) et méthodes (<em>attaquer</em>, <em>afficherInfos</em>).
+            Trois sous-classes&nbsp;: <strong>PokemonFeu</strong> (<em>lancerFlamme</em>),
+            <strong>PokemonEau</strong> (<em>jetEau</em>), <strong>PokemonPlante</strong> (<em>fouetLiane</em>).
+          </p>
+          <p class="muted" style="margin-top: 0.5rem;">Technologies utilisées</p>
+          <div class="skills-badges">
+            <span class="skill-badge">Java</span>
+            <span class="skill-badge">POO</span>
+            <span class="skill-badge">Héritage</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="container projet-card" id="projet-super-heros">
+        <h2>Gestion d'une Équipe de Super-Héros</h2>
+
+        <div class="projet-combat-visual">
+          <div class="combat-pokemon combat-pokemon--left">
+            <img src="Asset/images/super hero.png" alt="Super-héros de l'équipe" />
+          </div>
+          <span class="combat-vs" aria-hidden="true">VS</span>
+          <div class="combat-pokemon combat-pokemon--right">
+            <img src="Asset/images/data base superhero.png" alt="Vilain affrontant l'équipe de super-héros" />
+          </div>
+        </div>
+
+        <div class="text-block">
+          <p>
+            Application Java en mode console permettant de gérer une équipe de super-héros via une base de
+            données MySQL. Fonctionnalités&nbsp;: ajouter, afficher, modifier, supprimer, rechercher un héros
+            par nom, filtrer héros et vilains séparément. CRUD complet avec JDBC.
+          </p>
+          <p class="muted" style="margin-top: 0.5rem;">Technologies utilisées</p>
+          <div class="skills-badges">
+            <span class="skill-badge">Java</span>
+            <span class="skill-badge">MySQL</span>
+            <span class="skill-badge">JDBC</span>
+            <span class="skill-badge">POO</span>
+          </div>
+        </div>
       </section>
     </main>
 
